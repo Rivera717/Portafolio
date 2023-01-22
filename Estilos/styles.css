@@ -1,0 +1,118 @@
+:root {
+    --bgcolor: #3AAFA9;
+    --aqua: #2B7A7B;
+    --blue: #17252A;
+    --gray: #DEF2F1;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.navBar-container{
+    background-color: var(--aqua);
+    width: 100%;
+    height: 59px;
+}
+
+li{
+    flex-direction: row;
+    list-style-type: none;
+}
+
+i{
+    margin-left: 7px;
+}
+
+.img-marvin{
+    width: 85%;
+    filter:drop-shadow(0px 5px 10px var(--blue));
+    transition: 0.3s;
+    margin: 20px 50px;
+    padding: 10px;
+}
+
+.img-marvin:hover{
+    filter: drop-shadow(0px 3px 0px var(--aqua));
+}
+
+.about-me{
+    margin: 0px 100px 10px 25px;
+}
+
+.name-container{
+    margin: 50px 100px 10px 25px;
+    padding: 10px;
+    place-self: center center;
+}
+
+.about-me p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.skills-container{
+    margin: 80px 25px 10px 100px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.img-gallery-container{
+    margin: 80px 100px 10px 25px;
+    padding: 10px;
+}
+
+.img-tech{
+    width: 70px;
+}
+
+.projects-container{
+    margin: 50px 100px;
+    padding: 10px;
+}
+
+.secondary-project-container{
+    background-color: rgba(255, 255, 255 0.1);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+.grid-item{
+    border: 1px solid #000;
+    width: 300px;
+    height: 325px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.footer-container{
+    background-color: var(--blue);
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+}
+
+.footer-flex{
+    color: var(--gray);
+}

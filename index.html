@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Estilos/background.css" />
+    <link rel="stylesheet" href="./Estilos/styles.css" />
+    <link rel="stylesheet" href="./Estilos/textEffect.css" />
+    <link rel="stylesheet" href="./Estilos/position.css" />
+    <link rel="stylesheet" href="./Estilos/navbarEffect.css">
+    <link rel="stylesheet" href="./Estilos/galleryEffect.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+
+  <div class="site-container">
+    <div class="navBar-container">
+        <nav class="navMenu">
+          <a href="index.html">Who I am?</a>
+          <a href="https://www.youtube.com" target="_blank">Projects</a>
+          <a href="mailto:river.a14@hotmail.com?subject=Reunión&body=Agendemos una reunión, estoy interesado.">Contact me</a>
+          <a href="./Documentos/cv.pdf" download="Marvin Rivera CV">Download cv</a>
+          <div class="dot"></div>  
+        </nav>
+    </div>
+
+    <div class="aboutMe-container">
+        <div class="aboutMe-flex-container">
+            <div class="name-container">
+                Hello, my name is
+                <div class="stack" style="--stacks: 3">
+                  <span style="--index: 0">MARVIN</span>
+                  <span style="--index: 1">MARVIN</span>
+                  <span style="--index: 2">MARVIN</span>
+                </div>
+                <span class="right">and I'm Frontend Dev</span>
+            </div>
+            <div class="about-me">
+                <h2>About me</h2>
+                <p>
+                  Hello world! my name is Marvin Rivera, i'm a 22 year old boy, currently
+                  a Systems Engineering student at the University of El Salvador. My thing
+                  is web development, i started learning on my own and i liked it, thought
+                  it was better than my professional carrer and it was. Bit by bit, i was
+                  realizing how much I liked making websites and how amazing this world
+                  was. If I'm sure of something, it's that I wasn't wrong when I chose
+                  this and that every day there are new things to learn. Today I'm looking
+                  for a job as a Frontend Developer.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="imgProfile-container">
+      <img
+        class="img-marvin"
+        src="./Imágenes/Me1.png"
+        alt="Foto de Marvin Rivera"
+      />
+    </div>
+
+    <div class="skills-container">
+      <h2>Knowledge and Skills</h2>
+      <p>
+        When I started programming I was 17 years old, I started college knowing
+        nothing about programming. My first programming language was C# with VS
+        Community as IDE. Then I learned Java along with POO fundamentals. In my
+        third year of college, they taught me a bit of C and C++ along with
+        databases fundamentals and SQL queries. But, in this point, I asked myself, 
+        did I really liked programming? or was I just programming to get out of 
+        commitment? The answer took 1 year to arrive, when I chose to learn web 
+        development on my own and explore this amazing and endless world. During 
+        this learning time, these are some technologies that I know and with which I made this 
+        website and some the projects that you'll see next. I hope you enjoy it, come on!
+      </p>
+    </div>
+
+    <div class="img-gallery-container">
+      <div class="img-flex">
+        <div class="img-gallery">
+          <span style="--i:1"><img class="img-style1" src="./Imágenes/Tech/img1.png" alt="HTML5" /></span>
+          <span style="--i:2"><img class="img-style2" src="./Imágenes/Tech/img2.png" alt="CSS3" /></span>
+          <span style="--i:3"><img class="img-style3" src="./Imágenes/Tech/img3.png" alt="JavaScript" /></span>
+          <span style="--i:4"><img class="img-style4" src="./Imágenes/Tech/img4.png" alt="Sass" /></span>
+          <span style="--i:5"><img class="img-style5" src="./Imágenes/Tech/img5.png" alt="Tailwind" /></span>
+          <span style="--i:6"><img class="img-style6" src="./Imágenes/Tech/img6.png" alt="Bootstrap" /></span>
+          <span style="--i:7"><img class="img-style7" src="./Imágenes/Tech/img7.png" alt="React" /></span>
+          <span style="--i:8"><img class="img-style8" src="./Imágenes/Tech/img8.png" alt="Vue" /></span>
+          <span style="--i:9"><img class="img-style9" src="./Imágenes/Tech/img9.png" alt="C#" /></span>
+          <span style="--i:10"><img class="img-style10" src="./Imágenes/Tech/img10.png" alt="C++" /></span>
+          <span style="--i:11"><img class="img-style11" src="./Imágenes/Tech/img11.png" alt="Java" /></span>
+          <span style="--i:12"><img class="img-style12" src="./Imágenes/Tech/img12.png" alt="VSCode" /></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container">
+        <h2 style = "text-align: center;">Projects</h2>
+        <div class="secondary-project-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-flex">
+            Copyright © 2023 Marvin Rivera. Todos los derechos reservados. 
+        </div>
+    </footer>
+  </div>
+ 
+  <script src="main.js"></script>
+  </body>
+</html>

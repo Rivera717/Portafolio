@@ -1,0 +1,84 @@
+.site-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    justify-content: space-around;
+    align-content: space-around;
+    position: absolute;
+    width: 100%; 
+}
+
+.navBar-container{
+    display: grid;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+}
+
+.navMenu{
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgProfile-container{
+    display: grid;
+    grid-row: 2/ span 1;
+    grid-column: 1 / span 1;
+    place-self: center;
+    user-select: none;
+}
+
+.aboutMe-container{
+    display: grid;
+    grid-row: 2/ span 1;
+    grid-column: 2 / span 1;
+}
+
+.aboutMe-flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container{
+    display: grid;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.img-gallery-container{
+    display: grid;
+    grid-row: 3 / span 1;
+    grid-column : 2 / span 1;
+}
+
+.img-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects-container{
+    display: grid;
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+}
+
+.secondary-project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-container{
+    display: grid;
+    grid-row: 5 / span 1;
+    grid-column: 1/ span 2;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

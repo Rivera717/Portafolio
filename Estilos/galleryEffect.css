@@ -1,0 +1,79 @@
+.img-gallery{
+    position: relative;
+    transform-style: preserve-3d;
+    width: 80px;
+    height: 80px;
+    animation: animate 20s linear infinite;
+    transition: 0.2s;
+}
+
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+    50%{
+        transform: perspective(1000px) rotateX(10deg) rotateY(180deg)
+    }
+    100%{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }
+}
+
+.img-gallery span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 30deg)) translateY(-30px) translateZ(250px);
+    user-select: none;
+}
+
+.img-gallery span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    transition: 0.3s;
+    filter:drop-shadow(1px 1px 5px #2B7A7B);
+}
+
+.img-gallery span img:hover{
+    width: 90px;
+    transform: translateZ(25px);
+} 
+
+/*Asignamos sombras de distintos colores para lograr un  mejor efecto
+individual en cada una de las imágenes*/
+.img-style1:hover{
+    filter:drop-shadow(1px 1px 50px #e7591d);
+}
+.img-style2:hover, .img-style5:hover, 
+.img-style7:hover, .img-style10:hover,
+.img-style11:hover, .img-style12:hover{
+    filter:drop-shadow(1px 1px 50px #2760E5);
+}
+
+.img-style3:hover{
+    filter:drop-shadow(1px 1px 50px #eeca06);
+}
+
+.img-style4:hover{
+    filter:drop-shadow(1px 1px 50px #C26191);
+}
+
+.img-style6:hover, .img-style9:hover{
+    filter:drop-shadow(1px 1px 50px #6E10EA);
+}
+
+.img-style8:hover{
+    filter:drop-shadow(1px 1px 50px #3EAF7C);
+}
+
+.img-gallery:hover > :not(:hover){
+    opacity: .2;
+    transition: 0.2s;
+}
+
